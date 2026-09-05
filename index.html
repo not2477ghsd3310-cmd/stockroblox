@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Stock Checker</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #050805;
+      color: white;
+    }
+
+    header {
+      background: #081108;
+      border-bottom: 1px solid #21ff63;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #21ff63;
+      text-shadow: 0 0 15px #21ff63;
+    }
+
+    header p {
+      color: #aaa;
+    }
+
+    .games {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .game {
+      background: #0d120d;
+      border: 1px solid #1c4428;
+      border-radius: 16px;
+      padding: 22px;
+      transition: 0.25s;
+      cursor: pointer;
+    }
+
+    .game:hover {
+      transform: translateY(-5px);
+      border-color: #21ff63;
+      box-shadow: 0 0 20px rgba(33,255,99,.25);
+    }
+
+    .game h2 {
+      color: #21ff63;
+    }
+
+    .stock {
+      margin-top: 15px;
+      background: #111811;
+      padding: 12px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .available {
+      color: #21ff63;
+      font-weight: bold;
+    }
+
+    .rare {
+      color: gold;
+    }
+
+    button {
+      background: #21ff63;
+      color: #001a07;
+      border: 0;
+      padding: 10px 18px;
+      border-radius: 9px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      box-shadow: 0 0 15px #21ff63;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>ROBLOX STOCK CHECKER</h1>
+  <p>เช็กของในเกม Roblox แบบง่าย ๆ</p>
+  <button onclick="location.reload()">Refresh</button>
+</header>
+
+<div class="games">
+
+  <div class="game">
+    <h2>🍎 Blox Fruits</h2>
+    <p>ผลที่กำลังขาย</p>
+
+    <div class="stock">
+      <span>Rocket Fruit</span>
+      <span class="available">IN STOCK</span>
+    </div>
+
+    <div class="stock">
+      <span>Dragon Fruit</span>
+      <span class="rare">RARE</span>
+    </div>
+  </div>
+
+
+  <div class="game">
+    <h2>🥚 Steal an Egg</h2>
+    <p>ไข่ที่กำลังเกิด</p>
+
+    <div class="stock">
+      <span>Common Egg</span>
+      <span class="available">SPAWNED</span>
+    </div>
+
+    <div class="stock">
+      <span>Legendary Egg</span>
+      <span class="rare">LEGENDARY</span>
+    </div>
+  </div>
+
+
+  <div class="game">
+    <h2>🌱 Grow a Garden 2</h2>
+    <p>เมล็ดและของในร้าน</p>
+
+    <div class="stock">
+      <span>Carrot Seed</span>
+      <span class="available">IN STOCK</span>
+    </div>
+
+    <div class="stock">
+      <span>Rare Seed</span>
+      <span class="rare">RARE</span>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Roblox Stock Checker
+</footer>
+
+</body>
+</html>
